@@ -132,8 +132,8 @@ def main():
     # Проверка корректности даты
     try:
         birth = date(year, month, day)
-    except ValueError as e:
-        print("Ошибка: некорректная дата!", e)
+    except ValueError:
+        print("Ошибка: некорректная дата!")
         return
 
     # Проверка, что дата не в будущем
